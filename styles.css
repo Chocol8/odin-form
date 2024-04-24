@@ -1,12 +1,11 @@
 :root{
     --bg-color: #FFE5D9;
     --pink: #F4ACB7;
-    --label-pink: #9D8189;
 }
 
 *{
     font-family: "roboto", 'Courier New', Courier, monospace, 'system-ui';
-    font-size: calc(0.5vh + 1.1rem);
+    font-size: calc(0.5vh + 1rem);
     margin: 0;
 }
 
@@ -34,10 +33,34 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
 
+label{
+    font-size: calc(0.5vh + 0.8rem);
+    color: black;
+}
 
+input{
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+input::placeholder{
+    font-size: calc(0.5vh + 0.8rem);
+    padding-left: 3px;
+}
+
+input:invalid{
+    color: red;
+}
+
+input:required{
+    border-color: #E5E7EB;
+    border-style: solid;
+}
 
 .logo{
     display: flex;
@@ -83,7 +106,7 @@ li{
     height: 33.3%;
     padding: 2rem;
     background-color: var(--bg-color);
-    gap: 10px;    
+    gap: 20px;    
 }
 
 .logo{
@@ -110,13 +133,19 @@ li{
     justify-content: flex-end;
 }
 
+.submit-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .submit-button{
     border: none;
     border-radius: 15px;
     background-color: var(--pink);
     color: white;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
