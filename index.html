@@ -23,11 +23,40 @@
                 <h2>You know you want to</h2>
             </div>
             <div class="form-content">
-                <h1>This is a sample text</h1>
+                <form id="myform" action="/my-handling-form-page" method="post">
+                    <h1>a</h1>
+                    <ul>
+                        <li>
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="John"/>
+
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Doe"/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Johndoe@gmail.com"/>
+
+                            <label for="phone">Phone Number</label>
+                            <input type="number" id="phone" name="phone" placeholder="+631234567890"/>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password"/>
+
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" id="confirm_password" name="confirm_password" />
+                        </li>
+                    </ul>
+                </form>
             </div>
             <div class="submit-container">
-                <button class="">Create Account</button>
-                <p>Already have an account? Log in</p>
+                <button class="submit-button" type="submit" form="myform">Create Account</button>
+                <h1>Already have an account? <a class="log-in">Log in</a></h1>
             </div>
         </div>
    </div>

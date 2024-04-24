@@ -1,5 +1,6 @@
 :root{
-    --bg-color: #e9e9e9;
+    --bg-color: #FFE5D9;
+    --pink: #F4ACB7;
 }
 
 *{
@@ -12,6 +13,18 @@ body{
     background-color: var(--background-color);
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#myform{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .container{
     display: flex;
     
@@ -21,7 +34,7 @@ body{
     background-image: url("images/yunan-wang.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 40%;
+    width: 35%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -33,18 +46,19 @@ body{
 .form-container{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 65%;
+}
+
+.form-content{
+    height: 33.3%;
+    padding: 2rem;
 }
 
 .heading-text, .submit-container{
-    background-color: var(--bg-color);
-    gap: 10px;
-    
-}
-
-.form-container > div{
     height: 33.3%;
     padding: 2rem;
+    background-color: var(--bg-color);
+    gap: 10px;    
 }
 
 .logo{
@@ -65,4 +79,20 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.submit-button{
+    border: none;
+    border-radius: 15px;
+    background-color: var(--pink);
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.log-in{
+    font-size: calc(0.5vh + 1.1rem);
+    color: var(--pink);
 }
